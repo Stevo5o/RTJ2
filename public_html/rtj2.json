@@ -1,33 +1,49 @@
    {
-      "runthejewels2": [{
-         "01": "Jeopardy.mp3"
-      }, {
-         "02": "Oh My Darling Don\"t Cry.mp3"
-      }, {
-         "03": "Blockbuster Night Part 1.mp3"
-      }, {
-         "04": "Close Your Eyes (And Count To Fuck) (Feat. Zack De La Rocha).mp3",
-      } {
-         "05": "All My Life.mp3"
-      }, {
-         "06": "Lie, Cheat, Steal.mp3"
-      }, {
-         "07": "Early (feat. BOOTS).mp3"
-      }, {
-         "08": "All Due Respect (feat. Travis Barker).mp3"
-      }, {
-         "09": "Love Again (Akinyele Back) (feat. Gangsta Boo).mp3",
-      } {
-         "10": "Crown (feat. Diane Coffee).mp3",
-      } {
-         "11": "Angel Duster.mp3",
-      } {
-         "rtj2": "rtj2.png"
-      }, {
-         "rtj2B": "Run the Jewels - Digital Booklet.pdf",
-      } {
-         "rtj2Tour": "WeAreOnTourBuyTicketsNOW.pdf",
-      } {
-         "rtj22": "WeAreOnTourBuyTicketsNOW2.pdf"
-      }]
-   };
+      "runthejewels2": {
+         "tracks": [{
+            "track": "Jeopardy.mp3",
+            "link": "https://www.google.ie/webhp?hl=en"
+         }, {
+            "track": "Oh My Darling Don\"t Cry.mp3",
+            "link": "02"
+         }, {
+            "track": "Blockbuster Night Part 1.mp3",
+            "link": "03"
+         }, {
+            "track": "Close Your Eyes (And Count To Fuck) (Feat. Zack De {La Rocha).mp3",
+            "link": "04"
+         }, {
+            "track": "All My Life.mp3",
+            "link": "05"
+         }, {
+            "track": "Lie, Cheat, Steal.mp3",
+            "link": "06"
+         }, {
+            "track": "Early (feat. BOOTS).mp3",
+            "link": "07"
+         }, {
+            "track": "All Due Respect (feat. Travis Barker).mp3",
+            "link": "08"
+         }, {
+            "track": "Love Again (Akinyele Back) (feat. Gangsta Boo).mp3",
+            "link": "09"
+         }, {
+            "track": "Crown (feat. Diane Coffee).mp3",
+            "link": "10"
+         }, {
+            "track": "Angel Duster.mp3",
+            "link": "11"
+         }], 
+         "images": [
+         {
+            "rtj2img": "rtj2.png"
+         
+         }, {
+            "rtj2B": "Run the Jewels - Digital Booklet.pdf"
+         }, {
+            "rtj2Tour": "WeAreOnTourBuyTicketsNOW.pdf"
+         }, {
+            "rtj2Tour2": "WeAreOnTourBuyTicketsNOW2.pdf"
+         }]
+      }
+   }

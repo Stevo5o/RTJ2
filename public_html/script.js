@@ -1,38 +1,49 @@
 /**
- * script.js 
- * @ Stephen O'Connor, Febuary 2015
- * 
- * Dependencies: 
- * http://tristanedwards.me/sweetalert 
- * 
+ * script.js
+ * @ Stephen O'Connor, March 2015
+ *
+ * Dependencies:
+ * rtj2.json
  */
 
 // immediately invoked anonymous function
-( function () {
+(function() {
 
-// jQuery AJAX call
-$.ajax({
-	url: 'rtj2.json',
-	dataType: 'json',
-	type: 'get',
-	cache: false,
-	success: function(data) {
-		console.log(data);
-		// display links on page
-		var output = "";
-		$.each(data, function(key, val) {
-			for (var i = 0; i < val.length; i++) {
-				var user = val[i];
-				output +=
-					"<li><a id='" +
-					user.rtj2 +					
-					"</a></li>";
+	var xhr = new XMLHttpRequest();
+
+	xhr.open("GET", "rtj2.json", true);
+
+	xhr.setRequestHeader("Content-Type",
+		"application/json");
+
+	xhr.onreadystatechange = function() {
+		if (xhr.readyState === 4) {
+			var status = xhr.status;
+
+			if ((status >= 200 && status < 300) ||
+				status === 304) {
+				
+				var album = JSON.parse(xhr.responseText);
+				JSON.stringify(album);								
+				var output ="";
+				for (var i = 0, len = album.runthejewels2.tracks.length; i < len; i++) {
+					console.log(album.runthejewels2.tracks[i].link);
+					output += 
+					'<li><a href"' + album.runthejewels2.tracks[i].link + '">' +
+					album.runthejewels2.tracks[i].track + '</a></li>';
+					
+				}
+
+				document.getElementById("rtj2tracks").innerHTML = output;
 			}
-			$('ul#rtj2').append(output);
-		});
-	}
-});
+		}
+	};
 
-}() ); // end immediately invoked anonymous function
+	xhr.send(null);
 
+}());
 
+// for (i = 0, len = noNames.length; i < len; i++) {
+//  var name = noNames[i];
+//  alert(name);
+//  }
